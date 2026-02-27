@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Public Care - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #e6f2ff, #e0ffe6);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Logo Section */
+        .logo-container {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .logo-container img {
+            width: 100px;   /* small size logo */
+            max-width: 10%;
+        }
+
+        /* Login Form Section */
+        .login-container {
+            margin-bottom: 10px;
+            background: greenyellow;
+            padding: 30px;
+            font-size: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            width: 370px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 10px;
+            color: #2e7d32;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            margin:10px 0;
+            border-radius: 15px;
+            border: 10px solid #ccc;
+            outline: none;
+        }
+
+        .login-container input:focus {
+            border-color: #2e7d32;
+        }
+
+        .terms {
+            font-size: 20px;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        .terms a {
+            color: #2e7d32;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2e7d32;
+            color: white;
+            font-size:20px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #1b5e20;
+        }
+
+        .forgot {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .forgot a {
+            text-decoration: none;
+            color: #2e7d32;
+        }
+
+        .forgot a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 400px) {
+            .login-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="publiccare.jpg">
+        <img src="publiccare.jpg" alt="Public Care Logo">
+    </div>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form>
+            <input type="email" placeholder="Enter Email" required>
+            <input type="password" placeholder="Enter Password" required>
+
+            <div class="terms">
+                <input type="checkbox" required>
+                I agree to the <a href="#terms">Terms & Conditions</a>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="forgot">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+
+    <!-- Terms and Conditions Section -->
+    <div id="terms" style="padding:60px; background:lightblue; margin:20px; border-radius:50px; width:110%; max-width:900px;font-size:40px">
+        <h2 style="color: #8e7d32; margin-bottom:15px;">Terms and Conditions</h2>
+
+        <p><strong>1. Acceptance of Terms:</strong> By accessing Public Care, you agree to comply with these terms.</p>
+        <p><strong>2. User Responsibility:</strong> Users must provide accurate information and maintain account confidentiality.</p>
+        <p><strong>3. Privacy Policy:</strong> Personal information is used only for service improvement and complaint resolution.</p>
+        <p><strong>4. Public Complaints:</strong> All complaints must be genuine and not misleading.</p>
+        <p><strong>5. Security:</strong> We take necessary steps to protect data but cannot guarantee complete internet security.</p>
+        <p><strong>6. Service Modification:</strong> Public Care may update services or policies at any time.</p>
+        <p><strong>7. Account Termination:</strong> Violating rules may result in suspension or removal of account.</p>
+        <p><strong>8. Governing Law:</strong> These terms follow the laws of India.</p>
+    </div>
+
+</body>
+</html>
